@@ -1,0 +1,11 @@
+/vendor/
+.idea/
+go.sum
+out.jpeg
+/dir
+go.mod
+bdwrod
+order-web/redis.yaml
+order-web/pass.txt
+order-web/opccdata
+/excel
