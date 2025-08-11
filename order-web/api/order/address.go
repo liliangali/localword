@@ -53,7 +53,7 @@ func WordBaidu(c *gin.Context) {
 	tableName := fmt.Sprintf("seo_word_%d", tableIndex)
 
 	words := WordExtendFromBaidu(word)
-	fmt.Println(tableName, words)
+	//fmt.Println(tableName, words)
 
 	var seoWordDatas []dbmodel.SeoWord
 	global.GlobalDB.Select("id", "title", "extend_title").Table(tableName).Where("title=?", word).Find(&seoWordDatas)

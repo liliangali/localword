@@ -45,7 +45,7 @@ func InitMysqlConn() {
 
 func AutoMigrateTable() {
 	global.GlobalDB.AutoMigrate(
-		//&dbmodel.Menu{},
-		//&dbmodel.Role{},
+	//&dbmodel.Menu{},
+	//&dbmodel.Role{},
 	)
 }
