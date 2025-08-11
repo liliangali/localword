@@ -7,6 +7,11 @@ go build -o localword main.go
 ps aux|grep localword
 
 
+
+nohup ./localword > runoob.log 2>&1 &
+
+nohup ./localword > /dev/null 2>&1 &
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
