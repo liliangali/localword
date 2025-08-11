@@ -46,7 +46,7 @@ type WordItem struct {
 func WordBaidu(c *gin.Context) {
 	word := c.PostForm("word")
 	word = strings.TrimSpace(word)
-	if word == "" {
+	if word == "" || word == "request.getrequestdispatcher" {
 		return
 	}
 	tableIndex := GetTableIndex(word)
